@@ -1,0 +1,558 @@
+/* lato-100 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/lato-v16-latin-100.eot');
+  /* IE9 Compat Modes */
+  src: local('Lato Hairline'), local('Lato-Hairline'),
+    url('../fonts/lato-v16-latin-100.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/lato-v16-latin-100.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/lato-v16-latin-100.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/lato-v16-latin-100.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/lato-v16-latin-100.svg#Lato') format('svg');
+  /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v16-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Lato Regular'), local('Lato-Regular'),
+    url('../fonts/lato-v16-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/lato-v16-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/lato-v16-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/lato-v16-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/lato-v16-latin-regular.svg#Lato') format('svg');
+  /* Legacy iOS */
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/lato-v16-latin-900.eot');
+  /* IE9 Compat Modes */
+  src: local('Lato Black'), local('Lato-Black'),
+    url('../fonts/lato-v16-latin-900.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/lato-v16-latin-900.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/lato-v16-latin-900.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/lato-v16-latin-900.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/lato-v16-latin-900.svg#Lato') format('svg');
+  /* Legacy iOS */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v16-latin-700.eot');
+  /* IE9 Compat Modes */
+  src: local('Lato Bold'), local('Lato-Bold'),
+    url('../fonts/lato-v16-latin-700.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/lato-v16-latin-700.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/lato-v16-latin-700.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/lato-v16-latin-700.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/lato-v16-latin-700.svg#Lato') format('svg');
+  /* Legacy iOS */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* INTRO + HEADER */
+.intro-container {
+  width: 100%;
+  height: 550px;
+  background: url(../img/computer@2Xop.png) no-repeat center #3C4955;
+  background-size: cover;
+  z-index: -100;
+  padding-top: 25px;
+  margin-bottom: 90px;
+}
+
+.wrapper {
+  width: 1140px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  margin: auto;
+  margin-bottom: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foliac-logo {
+  max-width: 174px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.foliac-logo img {
+  max-width: 174px;
+}
+
+nav ul {
+  max-width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li::after {
+  content: '/';
+  font-weight: 100;
+  color: silver;
+  margin: 40px;
+}
+
+nav ul li:last-child:after {
+  content: '';
+  color: transparent;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Lato';
+  font-style: bold;
+  font-weight: 400;
+  color: white;
+}
+
+nav ul li a:hover {
+  font-weight: 500;
+  color: #48BF72;
+}
+
+.intro-title {
+  width: 1000px;
+  text-transform: uppercase;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  color: white;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 32px;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 3px solid #48BF72;
+  border-radius: 6px;
+  color: #48BF72;
+  font-size: 18px;
+  padding: 6px 15px;
+}
+
+button:hover {
+  background-color: #48BF72;
+  border: 3px solid #48BF72;
+  color: white;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+/* portfolio navigation */
+.categories-list ul {
+  max-width: 670px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.categories-list ul a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.categories-list ul a:last-child {
+  margin-right: 0;
+}
+
+.categories-list ul a li div {
+  padding: 8px 15px 10px 15px;
+  font-weight: bold;
+  color: #3C4955;
+  background-color: #EAEAEA;
+  border-radius: 3px;
+}
+
+.categories-list ul a li div:hover {
+  color: white;
+  background-color: #48BF72;
+}
+
+/* portfolio item cards */
+.pf-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.image {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-caption {
+  font-size: 30pt;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* image 1 */
+.img-1-1 {
+  width: 450px;
+  height: 300px;
+  position: relative;
+}
+
+.img-1-1 img {
+  margin-top: -25px;
+  width: 450px;
+}
+
+.img-1-1-hover {
+  visibility: hidden;
+}
+
+.img-1-1 a:hover .img-1-1-hover {
+  visibility: visible;
+}
+
+.img-1-1-hover img {
+  height: 325px;
+  position: absolute;
+  top: 0;
+}
+
+/* image 2 */
+.img-1-2 {
+  width: 650px;
+  height: 300px;
+  position: relative;
+}
+
+.img-1-2 img {
+  width: 650px;
+  height: 300px;
+}
+
+.img-1-2-hover {
+  visibility: hidden;
+}
+
+.img-1-2 a:hover .img-1-2-hover {
+  visibility: visible;
+}
+
+.img-1-2-hover img {
+  position: absolute;
+  top: 0;
+}
+
+/* image 3 */
+.img-2-1 {
+  width: 650px;
+  height: 435px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-2-1 img {
+  width: 650px;
+  height: 435px;
+}
+
+.img-2-1-hover {
+  visibility: hidden;
+}
+
+.img-2-1 a:hover .img-2-1-hover {
+  visibility: visible;
+}
+
+.img-2-1-hover img {
+  position: absolute;
+  top: 0;
+}
+
+/* image 4 */
+.img-2-2 {
+  width: 450px;
+  height: 435px;
+  position: relative;
+}
+
+.img-2-2 img {
+  height: 435px;
+  margin-left: -100px;
+}
+
+.img-2-2-hover {
+  visibility: hidden;
+}
+
+.img-2-2 a:hover .img-2-2-hover {
+  visibility: visible;
+}
+
+.img-2-2-hover img {
+  position: absolute;
+  top: 0;
+}
+
+/* SECTION AUTHOR */
+
+.author {
+  position: relative;
+  height: 450px;
+  margin-bottom: 50px;
+}
+
+.author-bg {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  background: url(../img/men-computer@2Xop.png) repeat center #303b45;
+  background-size: cover;
+  z-index: -100;
+}
+
+.author-about {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  color: white;
+}
+
+h2 {
+  font-size: 30pt;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 21pt;
+  margin-bottom: 40px;
+}
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
+
+.contacter-btn button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 3px solid rgba(60, 73, 85, 255);
+  border-radius: 6px;
+  color: rgba(60, 73, 85, 255);
+  font-size: 18px;
+  padding: 5px 15px;
+}
+
+.contacter-btn button:hover {
+  background-color: rgba(60, 73, 85, 255);
+  border: 3px solid rgba(60, 73, 85, 255);
+  color: white;
+}
+
+/* FORM */
+
+.cntct-form {
+  margin-bottom: 53px;
+}
+
+.form-wrapper {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.form-wrapper h3 {
+  margin: auto;
+  text-transform: uppercase;
+  font-family: myriad-pro, sans-serif;
+  font-size: 26pt;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
+  color: #48BF72;
+  letter-spacing: 0.05em;
+  margin-bottom: 54px;
+}
+
+.name-email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 335px;
+  height: 50px;
+  border: 3px solid rgba(60, 73, 85, 255);
+  border-radius: 6px;
+  padding-left: 70px;
+}
+
+input::placeholder {
+  color: rgba(166, 165, 165, 255);
+  font-size: 16px;
+}
+
+input:focus::placeholder {
+  visibility: hidden;
+}
+
+input:first-child {
+  background-image: url(../img/CompositeLayer@2X.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input:last-child {
+  background-image: url(../img/Email@2X.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+textarea {
+  width: 100%;
+  min-height: 230px;
+  max-height: 230px;
+  border: 3px solid rgba(60, 73, 85, 255);
+  border-left: 6px;
+  border-radius: 6px;
+  background-image: url(../img/Crayon@2X.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 70px;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+
+textarea::placeholder {
+  color: rgba(166, 165, 165, 255);
+  font-size: 16px;
+}
+
+textarea:focus::placeholder {
+  visibility: hidden;
+}
+
+.submit-btn button {
+  width: 100%;
+  height: 50px;
+  font-size: 14pt;
+  letter-spacing: 0.3em;
+  color: white;
+  background-color: #48BF72;
+  border-radius: 6px;
+}
+
+.submit-btn button:hover {
+  background-color: #6bcf8e;
+  border-color: #6bcf8e;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #3c4955;
+}
+
+.footer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  color: white;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.social img {
+  height: 55px;
+}
